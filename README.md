@@ -10,3 +10,9 @@ This is a website that I am developing as a Codecademy project. The purpose of t
 2. Ability to click to complete them
 
 At this point it is all - just add and compelte :)
+
+## How to use
+
+## Technologies
+
+HTML, CSS, JS
