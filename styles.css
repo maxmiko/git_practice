@@ -1,6 +1,9 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Overpass', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    background-color: white;
   }
 
   .container {
@@ -9,12 +12,38 @@ body {
     min-height: 100vh;
   }
 
+/*HEADER*/
+/*Navigation*/
+
+.main-menu {
+    padding: 0;
+    margin: 17px;
+    text-align: center;
+}
+
+.main-menu li {
+    display: inline-block;
+    margin: 10px;
+    font-weight: 700;
+
+}
+
   .title {
     background-color: #333;
     color: #fff;
     padding: 1rem;
     text-align: center;
   }
+
+  .tasks-block {
+    padding: 50px 150px;
+    background: #efefef;
+}
+
+.contacts-container {
+  padding: 50px 150px;
+  background: inherit;
+}
 
   .tasks {
     display: flex;
@@ -46,4 +75,46 @@ body {
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 1rem;
     }
+  }
+
+  ul {
+    list-style-type: none;
+  }
+ 
+
+  /*Task manager*/
+
+  #task-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  .task {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    padding: 10px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+  }
+  .task .icon {
+    display: inline-block;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid lightgrey;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+  }
+  .task.completed {
+    background-color: #cceeff;
+    border-color: #99d6ff;
+  }
+  .task.completed .icon {
+    background-color: #99d6ff;
+    color: white;
+  }
+  .warning {
+    color: red;
   }

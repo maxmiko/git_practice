@@ -2,28 +2,53 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Application</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass&family=Quicksand:wght@300;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     
   </head>
   <body>
+    <header>
+        <nav>
+            <ul class="main-menu">
+                <li>Home</li>
+                <li>Tasks</li>
+                <li>About</li>
+                <li>Contacts</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
     <div class="container">
       <div class="title">
-        <h1>My Application</h1>
+        <h1>Quick Tasks</h1>
       </div>
-      <div class="tasks">
-        <div class="tasks-title">Tasks</div>
-        <div class="task">Task 1</div>
-        <div class="task">Task 2</div>
-        <div class="task">Task 3</div>
-        <div class="task">Task 4</div>
-        <div class="task">Task 5</div>
-        <div class="task">Task 6</div>
-        <div class="task">Task 7</div>
-        <div class="task">Task 8</div>
-        <div class="task">Task 9</div>
-        <div class="task">Task 10</div>
-      </div>
+      <section class="tasks-block">
+      <div class="tasks-container">
+        <h1>Task Manager</h1>
+    <input type="text" id="task-input">
+    <button id="add-task">Add Task</button>
+    <p id="warning" class="warning" style="display: none;">Only 5 tasks may be added. Refresh to start over.</p>
+    <ul id="task-list"></ul>
+
+    
     </div>
-  </body>
+  </section>
+    <div class="contacts-container">
+        <h2>My Contacts</h2>
+        <ul>
+            <li>My Name</li>
+            <li>Location</li>
+            <li>email: maksims@maxweb.lv</li>
+            
+        </ul>
+    </div>
+    </div>
+  </main>
+<script src="task-manager.js"></script>  
+</body>
 </html>
